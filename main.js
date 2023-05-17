@@ -105,8 +105,9 @@ const count = document.querySelectorAll('.js-likes-counter');
 // )
 
 button.forEach((element, i) => {
-    element.addEventListener('click', function () {
+    element.addEventListener('click', () => {
         posts[i].likes++;
         count[i].innerHTML = posts[i].likes;
+        button[i].style.color = "blue";
     })
 })
