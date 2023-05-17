@@ -100,10 +100,6 @@ const button = document.querySelectorAll('.js-like-button');
 const count = document.querySelectorAll('.js-likes-counter');
 
 
-// button.addEventListener('click',
-//     console.log('ciao a tutti')
-// )
-
 button.forEach((element, i) => {
     element.addEventListener('click', () => {
         posts[i].likes++;
